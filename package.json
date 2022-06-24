@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "@pdftron/pdfnet-node": "^9.2.0-1",
+    "@pdftron/pdfnet-node-samples": "^9.2.0-2"
+  },
+  "name": "pdftron",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ryan Saffer",
+  "license": "MIT",
+  "description": ""
+}
