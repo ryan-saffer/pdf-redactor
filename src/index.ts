@@ -1,15 +1,37 @@
 import "dotenv/config"
 import { PDFNet } from "@pdftron/pdfnet-node"
+import fs from 'fs'
+import csv from 'csv-parser'
+
+// YOU CAN CHANGE BELOW DIRECTORY LOCATION
+const PDFS_DIRECTORY = "./data/pdfs/"
+
+let terms: string[] = []
+let files: string[] = []
+
+fs.createReadStream('./data/data.csv')
+    .pipe(csv())
+    .on('data', (row) => {
+        console.log(row)
+        terms.push(row['term'])
+    })
+    .on('end', async () => {
+        console.log('CSV file successfully processed');
+    });
+
+fs.readdirSync(PDFS_DIRECTORY).forEach(file => {
+    files.push(file)
+})
 
 async function main() {
-    const doc = await PDFNet.PDFDoc.createFromFilePath("/Users/rsaffer/Downloads/Application Checklist - Ryan.pdf")
-    
-    let terms = [
-        "Ryan",
-        "Elazar",
-        "Saffer",
-        "02/05/1993"
-    ]
+    for(const file of files) {
+        await performRedaction(file)
+    }
+}
+
+async function performRedaction(file: string) {
+
+    const doc = await PDFNet.PDFDoc.createFromFilePath(`${PDFS_DIRECTORY}/${file}`)
 
     let rarr: PDFNet.Redaction[] = []
 
@@ -28,7 +50,7 @@ async function main() {
     }
 
     PDFNet.Redactor.redact(doc, rarr, app, false, false);
-    await doc.save('Output/Redacted.pdf', PDFNet.SDFDoc.SaveOptions.e_linearized);
+    await doc.save(`output/${file}-redacted.pdf`, PDFNet.SDFDoc.SaveOptions.e_linearized);
 }
 
 /**
