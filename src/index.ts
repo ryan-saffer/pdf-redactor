@@ -1,3 +1,4 @@
+import "dotenv/config"
 import { PDFNet } from "@pdftron/pdfnet-node"
 
 async function main() {
@@ -72,6 +73,6 @@ async function redact(pattern: string, doc: PDFNet.PDFDoc) {
 }
 
 // add your own license key as the second parameter, e.g. in place of 'YOUR_LICENSE_KEY'.
-PDFNet.runWithCleanup(main, 'LICENSE_KEY').catch(function(error) {
+PDFNet.runWithCleanup(main, process.env.PDF_TRON_KEY).catch(function(error) {
   console.log('Error: ' + JSON.stringify(error));
 }).then(function(){ PDFNet.shutdown(); });

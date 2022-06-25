@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "@pdftron/pdfnet-node": "^9.2.0-1",
-    "@pdftron/pdfnet-node-samples": "^9.2.0-2"
+    "@pdftron/pdfnet-node-samples": "^9.2.0-2",
+    "dotenv": "^16.0.1"
   },
   "name": "pdftron",
   "version": "1.0.0",
@@ -12,5 +13,8 @@
   },
   "author": "Ryan Saffer",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  }
 }
