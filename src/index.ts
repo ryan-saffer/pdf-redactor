@@ -12,7 +12,6 @@ let files: string[] = []
 fs.createReadStream('./data/data.csv')
     .pipe(csv())
     .on('data', (row) => {
-        console.log(row)
         terms.push(row['term'])
     })
     .on('end', async () => {
@@ -50,6 +49,7 @@ async function performRedaction(file: string) {
     }
 
     PDFNet.Redactor.redact(doc, rarr, app, false, false);
+    file = file.replace('.pdf', '')
     await doc.save(`output/${file}-redacted.pdf`, PDFNet.SDFDoc.SaveOptions.e_linearized);
 }
 
@@ -71,7 +71,6 @@ async function redact(pattern: string, doc: PDFNet.PDFDoc) {
         const result = await txtSearch.run();
 
         if (result.code === PDFNet.TextSearch.ResultCode.e_found) {
-            console.log(`FOUND TERM: ${pattern}`)
             // add a link annotation based on the location of the found instance
             let hlts = result.highlights;
             await hlts.begin(doc); // is await needed?
