@@ -80,4 +80,4 @@ VIC
 ```
 
 # Additional Information
-If you have a large amount of Microsoft Word documents you need to first convert to PDF, you can use [this automator task](pdfConverter)
+If you have a large amount of Microsoft Word documents you need to first convert to PDF, you can use [this automator task](pdf-converter)
