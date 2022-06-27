@@ -44,7 +44,7 @@ Then we install all the dependencies:
 npm install
 ```
 
-## Adding the PDFTron License
+### Adding the PDFTron License
 Inside the folder `pdf-redactor`, create a file called `.env`:
 ```bash
 touch .env
@@ -54,7 +54,8 @@ Open this file, and add the following line, and save the document:
 ```
 PDF_TRON_KEY=REPLACE_WITH_LICENSE_KEY
 ```
-> License key purposely hidden.
+>❗ License key purposely hidden. You can obtain a license key from [PDFTron](https://www.pdftron.com/)
+
 Now we are ready to run the script. To run it, run:
 ```bash
 npm start
@@ -65,7 +66,7 @@ When you run the script, it will go through every file in the `data/pdfs` folder
 > Be sure **not** to remove the first line `term` in the `data.csv` file
 
 ## Tips for search terms
-Every row in the `data.csv` file be searched for and redacted individually. This means if you want to redact the following address:
+Every row in the `data.csv` file will be searched for and redacted individually. This means if you want to redact the following address:
 75 Bourke St, Melbourne VIC 3000
 
 It is better to put the following in the `data.csv` file:
@@ -77,3 +78,6 @@ Melbourne
 VIC
 3000
 ```
+
+# Additional Information
+If you have a large amount of Microsoft Word documents you need to first convert to PDF, you can use [this automator task](pdfConverter)
