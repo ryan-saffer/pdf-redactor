@@ -35,7 +35,6 @@ on run {input, parameters}
 		end try
 	end repeat
 	tell application "Microsoft Word"
-		set default file path file path type documents path path theOldDefaultPath
 		quit
 	end tell
 end run

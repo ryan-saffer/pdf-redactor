@@ -25,24 +25,26 @@
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
-				<string>2.1.1</string>
+				<string>1.2.1</string>
 				<key>AMApplication</key>
 				<array>
 					<string>Finder</string>
 				</array>
 				<key>AMParameterProperties</key>
 				<dict>
-					<key>itemType</key>
-					<dict/>
-					<key>predicate</key>
-					<dict/>
-					<key>searchPath</key>
+					<key>defaultLocation</key>
 					<dict>
 						<key>isPathPopUp</key>
 						<true/>
 						<key>variableUUIDsInMenu</key>
 						<array/>
 					</dict>
+					<key>granularity</key>
+					<dict/>
+					<key>multipleSelection</key>
+					<dict/>
+					<key>promptMessage</key>
+					<dict/>
 				</dict>
 				<key>AMProvides</key>
 				<dict>
@@ -53,91 +55,51 @@
 						<string>com.apple.cocoa.path</string>
 					</array>
 				</dict>
-				<key>AMRequiredResources</key>
-				<array/>
-				<key>AMSelectedInputType</key>
-				<string>com.apple.cocoa.path</string>
-				<key>AMSelectedOutputType</key>
-				<string>com.apple.cocoa.path</string>
 				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Find Finder Items 2.action</string>
+				<string>/System/Library/Automator/Ask for Finder Items.action</string>
 				<key>ActionName</key>
-				<string>Find Finder Items</string>
+				<string>Ask for Finder Items</string>
 				<key>ActionParameters</key>
 				<dict>
-					<key>itemType</key>
-					<string>com.apple.cocoa.path</string>
-					<key>predicate</key>
-					<data>
-					YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25Z
-					JGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGG
-					oF8QD05TS2V5ZWRBcmNoaXZlctEICVRyb290
-					gAGvEBYLDBMYICorLTQ4PT5BRUlOT1JaXmJk
-					VSRudWxs0w0ODxAREl8QF05TQ29tcG91bmRQ
-					cmVkaWNhdGVUeXBlXxAPTlNTdWJwcmVkaWNh
-					dGVzViRjbGFzcxABgAKAFdIUDxUXWk5TLm9i
-					amVjdHOhFoADgBTUDxkaGxwdHh9fEBFOU1Jp
-					Z2h0RXhwcmVzc2lvbl8QEE5TTGVmdEV4cHJl
-					c3Npb25fEBNOU1ByZWRpY2F0ZU9wZXJhdG9y
-					gBOADoAEgBHVISIjJA8lJicoKVlOU09wZXJh
-					bmReTlNTZWxlY3Rvck5hbWVfEBBOU0V4cHJl
-					c3Npb25UeXBlW05TQXJndW1lbnRzgAaABRAD
-					gAiADVx2YWx1ZUZvcktleTrSIw8QLIAH0i4v
-					MDFaJGNsYXNzbmFtZVgkY2xhc3Nlc18QEE5T
-					U2VsZkV4cHJlc3Npb26jMDIzXE5TRXhwcmVz
-					c2lvblhOU09iamVjdNIUDzU3oTaACYAM0w8j
-					OTo7PFlOU0tleVBhdGiACxAKgApUa2luZNIu
-					Lz9AXxAcTlNLZXlQYXRoU3BlY2lmaWVyRXhw
-					cmVzc2lvbqM/MjPSLi9CQ15OU011dGFibGVB
-					cnJheaNCRDNXTlNBcnJhedIuL0ZHXxATTlNL
-					ZXlQYXRoRXhwcmVzc2lvbqRGSDIzXxAUTlNG
-					dW5jdGlvbkV4cHJlc3Npb27TSiMPS0xNXxAP
-					TlNDb25zdGFudFZhbHVlgA8QAIAQXxAXTWlj
-					cm9zb2Z0IFdvcmQgRG9jdW1lbnTSLi9QUV8Q
-					GU5TQ29uc3RhbnRWYWx1ZUV4cHJlc3Npb26j
-					UDIz1Q9TVFVWV0xYTFlaTlNNb2RpZmllclhO
-					U05lZ2F0ZVlOU09wdGlvbnNeTlNPcGVyYXRv
-					clR5cGWAEggQBNIuL1tcXxAbTlNFcXVhbGl0
-					eVByZWRpY2F0ZU9wZXJhdG9yo1tdM18QE05T
-					UHJlZGljYXRlT3BlcmF0b3LSLi9fYF8QFU5T
-					Q29tcGFyaXNvblByZWRpY2F0ZaNfYTNbTlNQ
-					cmVkaWNhdGXSLi9EY6JEM9IuL2VmXxATTlND
-					b21wb3VuZFByZWRpY2F0ZaNlYTMACAARABoA
-					JAApADIANwBJAEwAUQBTAGwAcgB5AJMApQCs
-					AK4AsACyALcAwgDEAMYAyADRAOUA+AEOARAB
-					EgEUARYBIQErAToBTQFZAVsBXQFfAWEBYwFw
-					AXUBdwF8AYcBkAGjAacBtAG9AcIBxAHGAcgB
-					zwHZAdsB3QHfAeQB6QIIAgwCEQIgAiQCLAIx
-					AkcCTAJjAmoCfAJ+AoACggKcAqECvQLBAswC
-					1wLgAuoC+QL7AvwC/gMDAyEDJQM7A0ADWANc
-					A2gDbQNwA3UDiwAAAAAAAAIBAAAAAAAAAGcA
-					AAAAAAAAAAAAAAAAAAOP
-					</data>
-					<key>searchPath</key>
-					<string>~/Documents/TEST</string>
+					<key>defaultLocation</key>
+					<string>~/Desktop</string>
+					<key>granularity</key>
+					<integer>0</integer>
+					<key>multipleSelection</key>
+					<true/>
+					<key>promptMessage</key>
+					<string>Choose a Finder Item:</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.FindFinderItems2</string>
+				<string>com.apple.Automator.AskForFinderItems</string>
 				<key>CFBundleVersion</key>
-				<string>2.1.1</string>
+				<string>1.2.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
-				<key>CanShowWhenRun</key>
 				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
 				<key>Category</key>
 				<array>
 					<string>AMCategoryFilesAndFolders</string>
 				</array>
 				<key>Class Name</key>
-				<string>Find_Finder_Items_2</string>
+				<string>AMAskForFinderItemsAction</string>
 				<key>InputUUID</key>
-				<string>74874092-0CF2-4540-8C68-1B8A620759AA</string>
+				<string>C6B2D905-64EF-44C7-9BDA-1CBE3E4BF659</string>
 				<key>Keywords</key>
-				<array/>
+				<array>
+					<string>Find</string>
+					<string>Item</string>
+					<string>File</string>
+					<string>Folder</string>
+					<string>Ask</string>
+					<string>Choose</string>
+					<string>Prompt</string>
+				</array>
 				<key>OutputUUID</key>
-				<string>D5FD2246-3AC8-404D-87DE-C602858820B1</string>
+				<string>7219DF91-56F1-4F0D-873C-9A903EEDAB11</string>
 				<key>UUID</key>
-				<string>F5EA73B9-A780-49C3-9F64-7C208FFF7C71</string>
+				<string>DB50C388-0AC1-46C8-A7E6-3AF6C8A36B56</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Finder</string>
@@ -147,9 +109,9 @@
 					<key>0</key>
 					<dict>
 						<key>default value</key>
-						<string>com.apple.cocoa.path</string>
+						<integer>0</integer>
 						<key>name</key>
-						<string>itemType</string>
+						<string>granularity</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -160,9 +122,9 @@
 					<key>1</key>
 					<dict>
 						<key>default value</key>
-						<string></string>
+						<false/>
 						<key>name</key>
-						<string>searchPath</string>
+						<string>multipleSelection</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -173,10 +135,9 @@
 					<key>2</key>
 					<dict>
 						<key>default value</key>
-						<data>
-						</data>
+						<string>~/Desktop</string>
 						<key>name</key>
-						<string>predicate</string>
+						<string>defaultLocation</string>
 						<key>required</key>
 						<string>0</string>
 						<key>type</key>
@@ -184,15 +145,28 @@
 						<key>uuid</key>
 						<string>2</string>
 					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string>Choose a Finder Item:</string>
+						<key>name</key>
+						<string>promptMessage</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
 				</dict>
 				<key>conversionLabel</key>
 				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>563.500000:357.000000</string>
+				<string>673.000000:333.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Find Finder Items 2.action/Contents/Resources/Base.lproj/main.nib</string>
+				<string>/System/Library/Automator/Ask for Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<integer>1</integer>
@@ -238,7 +212,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>property theList : {"doc", "docx"}on run {input, parameters}	tell application "Microsoft Word" to set theOldDefaultPath to get default file path file path type documents path	repeat with x in input		try			set theDoc to contents of x			tell application "Finder"				set theFilePath to container of theDoc as text								set ext to name extension of theDoc				if ext is in theList then					set theName to name of theDoc					copy length of theName to l					copy length of ext to exl										set n to l - exl - 1					copy characters 1 through n of theName as string to theFilename										set theFilename to theFilename &amp; ".pdf"										tell application "Microsoft Word"												set default file path file path type documents path path theFilePath						open theDoc						set theActiveDoc to the active document												save as theActiveDoc file format format PDF file name theFilename						copy (POSIX path of (theFilePath &amp; theFilename as string)) to end of output												closetheActiveDoc					end tell				end if			end tell		end try	end repeat	tell application "Microsoft Word"		set default file path file path type documents path path theOldDefaultPath		quit	end tellend run</string>
+					<string>property theList : {"doc", "docx"}on run {input, parameters}	tell application "Microsoft Word" to set theOldDefaultPath to get default file path file path type documents path	repeat with x in input		try			set theDoc to contents of x			tell application "Finder"				set theFilePath to container of theDoc as text								set ext to name extension of theDoc				if ext is in theList then					set theName to name of theDoc					copy length of theName to l					copy length of ext to exl										set n to l - exl - 1					copy characters 1 through n of theName as string to theFilename										set theFilename to theFilename &amp; ".pdf"										tell application "Microsoft Word"												set default file path file path type documents path path theFilePath						open theDoc						set theActiveDoc to the active document												save as theActiveDoc file format format PDF file name theFilename						copy (POSIX path of (theFilePath &amp; theFilename as string)) to end of output												closetheActiveDoc					end tell				end if			end tell		end try	end repeat	tell application "Microsoft Word"		quit	end tellend run</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -255,15 +229,15 @@
 				<key>Class Name</key>
 				<string>RunScriptAction</string>
 				<key>InputUUID</key>
-				<string>6F860DFB-9D73-4ACD-BBBD-1BA2B7B8BC7C</string>
+				<string>1B459239-B09D-4D6C-84DC-3BAD68750E98</string>
 				<key>Keywords</key>
 				<array>
 					<string>Run</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>CC3DE58B-E1E3-4FA6-9D77-4FF315CD660C</string>
+				<string>6F80F9DA-1394-44A4-A84C-3CC6B7B9007E</string>
 				<key>UUID</key>
-				<string>B2B3ECA5-5751-4D1A-B3A7-4400526FC46A</string>
+				<string>D209605E-B475-456D-9065-1CE067037EAE</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -294,7 +268,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>563.500000:602.000000</string>
+				<string>673.000000:1125.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -304,23 +278,14 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>BF1A9C4E-8B95-4629-A589-2BD1CBA7D1BE</key>
+		<key>3B94A3FD-BC75-46A9-A75F-F5E842C2D8FD</key>
 		<dict>
 			<key>from</key>
-			<string>F5EA73B9-A780-49C3-9F64-7C208FFF7C71 - F5EA73B9-A780-49C3-9F64-7C208FFF7C71</string>
+			<string>DB50C388-0AC1-46C8-A7E6-3AF6C8A36B56 - DB50C388-0AC1-46C8-A7E6-3AF6C8A36B56</string>
 			<key>to</key>
-			<string>B2B3ECA5-5751-4D1A-B3A7-4400526FC46A - B2B3ECA5-5751-4D1A-B3A7-4400526FC46A</string>
+			<string>D209605E-B475-456D-9065-1CE067037EAE - D209605E-B475-456D-9065-1CE067037EAE</string>
 		</dict>
 	</dict>
-	<key>variables</key>
-	<array>
-		<dict>
-			<key>UUID</key>
-			<string>FC67B5B3-BAF6-46DD-874D-881F9E9CC2BB</string>
-			<key>identifier</key>
-			<string>com.apple.Automator.Variable.DownloadsFolder</string>
-		</dict>
-	</array>
 	<key>workflowMetaData</key>
 	<dict>
 		<key>workflowTypeIdentifier</key>
